@@ -5,5 +5,11 @@
   <%= @drawing.name %>
 </p>
 
+<p>
+  <strong>Drawing:</strong>
+  <%= image_tag(@drawing.avata.url(:thumb)) %>
+</p>
+
 <%= link_to 'Edit', edit_drawing_path(@drawing) %> |
 <%= link_to 'Back', drawings_path %>
+

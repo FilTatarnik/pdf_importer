@@ -16,7 +16,15 @@
     <%= form.text_field :name, id: :drawing_name %>
   </div>
 
+  <div class="field">
+    <%= form.label :avata %>
+    <%= form.file_field :avata %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
+
 <% end %>
+
+
