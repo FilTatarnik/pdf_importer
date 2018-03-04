@@ -8,6 +8,8 @@
 <p>
   <strong>Drawing:</strong>
   <%= image_tag(@drawing.avata.url(:thumb)) %>
+  <%= content_tag(:iframe, '', src: @drawing.avata.url, 
+                   width: 600, height: 450, frameborder: 0) %>
 </p>
 
 <%= link_to 'Edit', edit_drawing_path(@drawing) %> |
